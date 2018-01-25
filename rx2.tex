@@ -21,37 +21,6 @@
 
 \newcommand{\mycomment}[1]{}
 \usepackage{fancyvrb}
-%\makeatletter
-%\mode<presentation>
-%\defbeamertemplate*{footline}{infolines theme}
-%{
-%  \leavevmode%
-%  \hbox{%
-%  \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
-%    \usebeamerfont{author in head/foot}\insertshortauthor~~\beamer@ifempty{\insertshortinstitute}{}{(\insertshortinstitute)}
-%  \end{beamercolorbox}%
-%  \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
-%    \usebeamerfont{title in head/foot}\insertshorttitle
-%  \end{beamercolorbox}%
-%  \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}%
-%    \usebeamerfont{date in head/foot}
-%    \insertshortdate{}
-%    \hspace*{2em}
-    %\insertframenumber{} / \inserttotalframenumber
-    %\hspace*{2ex} 
-%  \end{beamercolorbox}
-%}%
-%  \vskip0pt%
-%}
-%\mode
-%<all>
-%\makeatother
-
-%\usefonttheme{professionalfonts}
-%\usefonttheme[onlymath]{serif}
-%\usepackage[opticals, onlytext]{MinionPro}
-%\DeclareMathAlphabet{\mathlf}{T1}{MinionPro-LF}{m}{n}
-
 % *****************************************************************************
 % Matematica 
 % *****************************************************************************
@@ -67,9 +36,6 @@
 %\setkeys{breqn}{labelprefix={eq:}}
 
 
-% *****************************************************************************
-% Animation (only Adobe)
-% *****************************************************************************
 %\usepackage{asymptote}
 %\usepackage[loop, controls]{animate}
 
@@ -96,11 +62,6 @@
 \providecommand{\Ie}{I.\,e.}
 \providecommand{\eg}{e.\,g.}
 \providecommand{\Eg}{E.\,g.} 
-\providecommand{\osx}{Mac~OS~X} 
-\usepackage[punct-after=false]{fnpct} 
-%\AdaptNoteOptNoMult\autocite
-\setfnpct{add-punct-marks=:}
-\setfnpct{add-punct-marks=;}
 
 \metroset{block=fill}
 \metroset{titleformat frame=smallcaps}
@@ -108,15 +69,12 @@
 \title{The categorical ``flavour'' of the \mbox{Reactive Extensions }(aka Rx)}
 \subtitle{and how it can help us building better reactive code}
 
-%\subtitle{Lesson learnt}%Review of what has been done so far}
 \date{\today}
 \author[A. Candolini]{Alessandro Candolini}
 %\institute{Department of Physics, University of Trieste}
 % \titlegraphic{\hfill\includegraphics[height=1.5cm]{logo/logo}}
 
 \begin{document}
-
-
 
 \maketitle
 
@@ -335,16 +293,6 @@ Naively speaking, Rx provides way to:
 	\end{itemize}
 
 \end{frame}
-%\begin{frame}
-%	\begin{itemize}
-%		\item Heavily shaped by \emph{functional programming} concepts (map-filter-reduce, stateless, monadic behaviour of observables, referencial transparency-\emph{ish} style) 
-%		\item \emph{Not just FP}: it does support 
-%			\emph{side effects} (doOnSomething, Subjects, etc) 
-%		\item \emph{Push-based} (ie, reactive)
-%		\item \emph{Declarative scheduling}: abstraction on top of synchornous vs asynchronous behavior (inversion of control, the consumer specifies it) 
-%	\end{itemize}
-%\end{frame}
-
 
 \section{Categorical duality}
 
@@ -466,23 +414,6 @@ interface Observer<in T> {
 		\includegraphics{function}
 	\end{figure}
 \end{frame}
-%\begin{frame}
-%	\begin{figure}
-%		\centering
-%		\includegraphics[width=\textwidth]{backus}
-%	\end{figure}
-%\end{frame}
-%\begin{frame}[fragile]
-%	\frametitle{Non-mathematical functions}
-%	Side effects, for example: 
-%	\begin{itemize}
-%		\item Mutations: \verb|i++|
-%		\item Changing boolean flags, eg \verb|i++| is logged in
-%		\item Logs,
-%		\item Exceptions,
-%		\item Notion of asynchrnous vs synchronous 
-%	\end{itemize}
-%\end{frame}
 \begin{frame}
 	FP ``keywords'':
 	\begin{itemize}
@@ -729,23 +660,12 @@ Anytime you find yourself writing code of the form “if the object is of type T
 	Scott Meyers (Effective C++)
 \end{frame}
 
-% Warming up
-%\begin{frame}[fragile]
-%\frametitle{Goals}
-%	\begin{lstlisting}[language=C++,basicstyle=\ttfamily,keywordstyle=\color{red}]
-%\end{lstlisting}
-%\end{frame}
-
-
-
-
 \plain{Questions?}
 
 %\begin{frame}[allowframebreaks] {References}
 % \bibliography{demo}
 % \bibliographystyle{abbrv}
 %\end{frame}
-
 
 \end{document}
 
