@@ -1,5 +1,6 @@
 # Category theory and reactive extensions 
 Slides for an introductory presentation about how abstract category theory and functional programming provide interesting and helpful insights into reactive extensions (aka Rx)
+
 Despite not being (intentionally) an implementation of functional reactive programming (FRP) in the strict sense --- Rx lacks the rigorous time semantics in the spirit of the pioneering work by Paul Hudak and Conal Elliott back in their 1997 paper *Functional Reactive Animation* — and leaving room for side effects to bridge with imperative code, reactive extensions are indeed heavily shaped and influenced by several intriguing concepts and ideas borrowed from category theory and functional programming.
 
 After a brief (and mostly incomplete) review of some of the theoretical underpinnings, this talk will walk through some concrete example to show how
